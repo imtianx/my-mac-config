@@ -24,8 +24,8 @@ cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula
 
 git checkout f2a764ef9
 
-// 注意这里 要用 python ，不能用 python3，否则安装仍是最新版本软件
-brew install python
+// 注意这里 要用 python ，不能用 python3，否则安装仍是最新版本软件,指定openssl,否则 pip 无法使用 ssl
+brew install python --with-brewed-openssl
 
 git checkout master
 
