@@ -46,4 +46,6 @@ listen       80;
 最后，在 idea 中使用：
 lisence server : [http://idea.imtianx.cn](http://idea.imtianx.cn)
 
+## 上述法无效后，可用教育邮箱申请的授权码：[Jetbrains-Idea-active-code](https://gist.github.com/imtianx/8774755ce63a5443c5d8129e1b8bbda8)
+
 
