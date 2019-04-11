@@ -39,6 +39,16 @@ git checkout master
 export HOMEBREW_NO_AUTO_UPDATE=true
 ```
 
+## 2.Mac 微信防撤回、多开插件：[WeChatPlugin-MacOS](https://github.com/TKkk-iOSer/WeChatPlugin-MacOS)
+
+```
+curl -o- -L https://raw.githubusercontent.com/lmk123/oh-my-wechat/master/install.sh | bash -s
+omw
+
+```
+
+> wechat 更新后需重装，安装完插件需重启 wechat
+
 
 
 
