@@ -1,6 +1,8 @@
 
 # Install Softwares
 
+> 参考 ：[bestswifter/macbootstrap](https://github.com/bestswifter/macbootstrap)
+
 
 ## 1.[brew](https://brew.sh/) 安装低版本软件
 
@@ -48,6 +50,21 @@ omw
 ```
 
 > wechat 更新后需重装，安装完插件需重启 wechat
+
+## 3、各种 Preview 插件  [quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
+
+主要包括：
+ - qlcolorcode: 代码文件预览时高亮
+ - qlstephen: 以纯文本的形式预览无拓展名或者未知拓展名的文件
+ - qlmarkdown: 预览渲染后的 markdown 文件
+ - quicklook-json: 预览格式化后的 json 文件
+ - qlimagesize: 预览图片时显示图片大小
+ - webpquicklook: 预览 webp 格式的图片
+ - suspicious-package: 预览 Mac OX 安装包类型的文件
+ - qlvideo: 预览视频文件
+ - provisionql: 预览 iOS 开发时用到的 provisionfile 文件
+ - quicklookapk: 预览安卓的 apk 文件
+
 
 
 
