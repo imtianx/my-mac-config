@@ -37,5 +37,6 @@ docker run -d -v <path/to/your/src>:/opengrok/src  --privileged=true -p 8080:808
 docker exec <container_id> /scripts/index.sh
 
 ```
+最后访问 ： [http://localhost:8080](http://imtianx.cn) 进行查看。
 > 其他配置参考 [此处](https://hub.docker.com/r/opengrok/docker)。
 
