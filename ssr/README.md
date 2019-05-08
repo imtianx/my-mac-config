@@ -1,7 +1,10 @@
 
-# Science Online
+# ssr software
 
-## ssr software： [shadowsocksRss](https://github.com/imtianx/shadowsocksRss)
+- android
+- ios
+- mac 
+- win
 
 ## 引火虫： [firefly-proxy](https://github.com/yinghuocho/firefly-proxy)
 
