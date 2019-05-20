@@ -81,7 +81,8 @@ omw
 ```
 asar extract app.asar app 
 ```
-5. 修改 app 该文件： `app/src/engine/license-manager.js` **125行**： 
+5. 修改 app 该文件： `app/src/engine/license-manager.js` **125行**,
+
 修改前：
 
 ```
