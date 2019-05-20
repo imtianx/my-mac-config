@@ -66,6 +66,58 @@ omw
  - quicklookapk: 预览安卓的 apk 文件
 
 
+## 4、staruml 破解
+
+1. [官网下载安装](http://staruml.io/download)，打开一次然后关闭；
+2.  使用 `npm` 安装 **asar** :
+   ```
+    npm install asar -g
+   ```
+3. 进入用用中的此目录
+  ```
+  cd /Applications/StarUML.app/Contents/Resources/
+  ```
+4. 解压 `app.asar` 
+```
+asar extract app.asar app 
+```
+5. 修改 app 该文件： `app/src/engine/license-manager.js` **125行**： 
+修改前：
+
+```
+  checkLicenseValidity () {
+    this.validate().then(() => {
+      setStatus(this, true)
+    }, () => {
+      setStatus(this, false)
+      UnregisteredDialog.showDialog()
+    })
+  }
+
+```
+
+**修改后：**
+
+```
+  checkLicenseValidity () {
+    this.validate().then(() => {
+      setStatus(this, true)
+    }, () => {
+      setStatus(this, true)
+    })
+  }
+
+```
+
+6. 重新打包 app 即可完成破解
+
+```
+asar pack app app.asar
+```
+
+
+
+
 
 
 
