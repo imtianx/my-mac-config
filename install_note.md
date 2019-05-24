@@ -116,6 +116,15 @@ asar extract app.asar app
 asar pack app app.asar
 ```
 
+# 5、mac 命令删除文件到回收站 [rmtrash](http://macappstore.org/rmtrash/)
+
+```
+// install 
+brew install rmtrash
+// set alia
+alias rm=rmtrash
+```
+
 
 
 
