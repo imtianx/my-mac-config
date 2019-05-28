@@ -162,6 +162,20 @@ echo "test" | gpg --clearsign
 ```
 - [gpg failed to sign data](https://stackoverflow.com/questions/41052538/git-error-gpg-failed-to-sign-data/41054093)
 
+**sourcetree 开启 gpg**
+
+进入 gpg 安装目录，`/usr/local/Cellar/gnupg/2.2.15/bin/` 中，新建链接，
+```
+ln -s gpg gpg2
+```
+然后在 sourcetree 中选择 gpg 目录;
+
+接着，对于项目 ，设置 gpg,
+
+最后，提交的时候开启 签名；
+
+
+
 
 
 
