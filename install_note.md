@@ -125,6 +125,43 @@ brew install rmtrash
 alias rm=rmtrash
 ```
 
+# 6、git 开启 gpg
+
+[github doc](https://help.github.com/en/articles/managing-commit-signature-verification)
+
+安装 `gpg`:
+
+```
+brew install gpg
+```
+生成证书，[文档](https://help.github.com/en/articles/generating-a-new-gpg-key)
+
+```
+// generate 
+gpg --full-generate-key
+
+// view
+gpg --list-secret-keys --keyid-format LONG
+
+// show detail
+gpg --armor --export <gpg_kek_id>
+
+// add to github 
+
+// test , if error to run : export GPG_TTY=$(tty) 
+echo "test" | gpg --clearsign
+
+```
+
+常见错误：
+
+- gpg: agent_genkey failed: No such file or directory
+```
+ ps axu | grep gpg-agent
+ // kill 
+```
+- [gpg failed to sign data](https://stackoverflow.com/questions/41052538/git-error-gpg-failed-to-sign-data/41054093)
+
 
 
 
