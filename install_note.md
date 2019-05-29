@@ -174,6 +174,27 @@ ln -s gpg gpg2
 
 最后，提交的时候开启 签名；
 
+**修改签名信息**
+
+```
+// 进入gpg
+gpg --edit-key <email/key_id>
+
+// 选择 uid 1
+uid 1
+// 删除
+deluid
+// add 
+adduid
+// 信任
+trust
+// 保存
+save
+// 对于已上传到密钥服务器的，不想更换，可以进行吊销
+revuid
+// 更多指定可使用 help 看看
+```
+
 
 
 
