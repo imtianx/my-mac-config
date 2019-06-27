@@ -7,6 +7,15 @@ some configurations ,tools and softwares for  my macbook pro  in the developemen
 ## using
 ### [docker 使用](docker.md)
 
+## Git LFS 使用
+```
+brew install git-lfs
+git lfs install
+git lfs track "backup/*"
+// or git add .gitattributes
+```
+
+
 
 
 ## 参考
