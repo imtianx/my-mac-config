@@ -15,6 +15,13 @@ git lfs track "backup/*"
 // or git add .gitattributes
 ```
 
+### MAC command
+
+```
+// 开启未知来源
+sudo spctl --master-disable
+```
+
 
 
 
