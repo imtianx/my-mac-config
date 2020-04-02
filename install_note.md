@@ -195,6 +195,17 @@ revuid
 // 更多指定可使用 help 看看
 ```
 
+# 7、Mac 安装 Adobe Creative Cloud 不显示 app.
+
+> 有：you don't have access to manage apps...类似的提示，不显示 app，解决办法。
+
+找到该文件：`/Library/Application Support/Adobe/OOBE/Configs/ServiceConfig.xml`，内容如下：
+
+```
+<config><panel><name>AppsPanel</name><visible>false</visible></panel><feature><name>SelfServeInstalls</name><enabled>false</enabled></feature></config>
+
+```
+copy 改文件，将 `visible>false</visible>`中的 `false` 改成 `true`，然后替换源文件，推出软件重新登录即可显示 app。
 
 
 
