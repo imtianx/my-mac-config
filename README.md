@@ -15,11 +15,30 @@ git lfs track "backup/*"
 // or git add .gitattributes
 ```
 
-### MAC command
+## MAC command
 
 ```
 // 开启未知来源
 sudo spctl --master-disable
+```
+
+## Clash 配置
+
+clash for windows 配置 parsers
+```yaml
+parsers: # array
+  - reg: ^[a-zA-z]+://[^\s]* # 正则匹配 url 
+    yaml:
+      prepend-proxy-groups:
+        - name: 'chatgpt'
+          type: select
+          proxies:
+            - '🌐 国外流量'
+      prepend-rules:
+        - DOMAIN-SUFFIX,unisat.io,chatgpt
+        - DOMAIN-SUFFIX,openai.com,chatgpt
+      commands:
+        - proxy-groups.chatgpt.proxies=[]proxyNames|美国  # 过滤美国节点
 ```
 
 
